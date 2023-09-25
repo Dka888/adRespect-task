@@ -12,6 +12,10 @@ const submenu = document.getElementById('submenu');
 menuIcon.addEventListener('click', () => {
     submenu.classList.toggle('hidden');
     submenu.classList.toggle('active');
+    setTimeout(() => { 
+        submenu.classList.add('hidden');
+        submenu.classList.remove('active');
+    }, 5000)
 });
 
 const searchIcon = document.getElementById('search-icon');
